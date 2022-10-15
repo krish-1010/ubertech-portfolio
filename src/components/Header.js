@@ -22,7 +22,6 @@ export default function Header() {
             <li><Link to="skill" spy={true} smooth={true}>About</Link></li>
             <li><Link>Contact</Link></li>
         </ul> */}
-        <button className='dark'>dark</button>
       </header>
      
     </div>
