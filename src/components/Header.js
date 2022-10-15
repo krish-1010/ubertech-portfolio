@@ -12,9 +12,9 @@ export default function Header() {
         </div>
         <div className="second-flex">
         <ul className='navbar'>
-            <li><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
-            <li><Link to="skill" spy={true} smooth={true}>About</Link></li>
-            <li><Link>Contact</Link></li>
+            <li className='pointer'><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
+            <li className='pointer'><Link to="skill" spy={true} smooth={true}>About</Link></li>
+            <li className='pointer'><Link>Contact</Link></li>
         </ul>
         </div>
         {/* <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
