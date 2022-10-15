@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400;0,600;1,600;0,700;0,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #82699A;
+  --dark-purple: #A040EC;
+  --light-purple: #B184EB;
+  --medium-purple: #CE96E2;
+  --medium-weight: 400;
+  --bold-weight: 700;
+  /* var(--blue) */
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+.Header-wrapper{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* border: 1px solid red; */
+  background-color: var(--primary-color);
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+}
+
+.header{
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 10em;
+}
+.logo {
+  background-color: white;
+  height: 57px;
+  width: 57px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+}
+
+.first-flex{
+  /* width: 50px; */
+  /* border: 1px solid red; */
+  margin-left: 1em;
+  font-size: 2em;
+  font-weight:600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  display: block;
+  position: absolute;
+  right: 30px;
+}
+
+.sticker {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo-text {
+  letter-spacing: 7px;
+  padding-left: 0.75em;
+}
+
+.second-flex{
+  /* border: 1px solid red; */
+  /* width: 20rem; */
+  display: flex; 
+  gap: 1em;
+  margin-right: 10rem;
+}
+
+.second-flex ul {
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  list-style: none;
+  gap: 3.25em;
+}
+
+.Hero-wrapper{
+  background-image: url('./imgs/hero1.jpg');
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  /* opacity: 77%; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 15rem;
+  flex-direction: column;
+  color: white;
+}
+
+.main-text{
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+
+.second-text {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.more-about {
+  /* height: fit-content; */
+  margin-top: 1em;
+  padding: 10px 20px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #8c00ff;
+}
+
+.more-about:hover {
+  background-color: #932ce8;
+}
+
+.main-text .violet{
+  color: #8c00ff;
+}
+
+.violet{
+  color: #8c00ff;
+}
+/* 
+.Header-wrapper {
+  background-color: rgba(157, 69, 229, 1) !important;
+  opacity: 100%;
+} */
+
+.Second-wrapper {
+  display: flex;
+}
+
+.my-icon {
+  height: 25em;
+  width: 25em;
+  margin-left: 5em;
+
+}
+
+.about-wrapper {
+  /* padding-top: 10em; */
+  margin-left: 10em;
+
+}
+
+.about-text {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  
+}
+
+.my-icon-img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-box {
+  font-size: 1.25rem;
+
+}
+
+.p-p-2 {
+  margin-bottom: 1.75em;
+}
+
+.tick {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.Skills-wrapper{
+
+  
+}
+
+.skill-elem {
+  width: 15em;
+  height: 4em;
+  border-radius: 5px;
+  color: #82699A;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  
+  box-shadow: 0 4px 4px 0 rgba(177, 132, 235, 1);
+  font-weight: 700;
+}
+
+.flex-row {
+  display: flex;
+  gap: 2em;
+  padding-bottom: 1.5em;
+  margin: 0 auto;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.skillicon {
+  margin-left: 2em;
+  height: 40%;
+  width: 20px;
+  margin-right: 3em;
+
+}
+
+
+
+.ch1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+}
+
+.cp1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 1.49rem;
+}
+
+/* .cp2 {
+  color: rgb(187, 187, 187);
+} */
+
+
+.time {
+  font-weight: bold;
+}
+
+.cbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;  
+  margin-bottom: 5rem;
+}
+
+.cp2 {
+  margin-bottom: 2.5rem;
+}
+
+.grid1 {
+  grid-column: span 2/ span 2;
+  padding: 1rem;
+  /* border: 1px solid black; */
+  border-radius: 0.375rem;
+}
+
+.gridh1 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.emailbox {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+}
+
+.emailbox:focus-visible {
+  outline: auto;
+}
+
+.gridh2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.textarea {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 9rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.sendbtn {
+  display: flex;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.sendbtn:hover{
+  background-color: #8c00ff;
+  color:white;
+  fill: white;
+}
+
+.sendtxt {
+  margin-top: 2px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+#sendicon {
+  display: block;
+  margin-left: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.grid2 {
+  grid-row: auto;
+}
+
+.a1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* border: 1px solid black; */
+  border-radius: 0.375rem;
+}
+
+.Contact-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.svg1 {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.goto {
+  width: 1.25em;
+  height: 1.25em;
+  display: block;
+  font-size: 16px;
+}
+
+.githubh1 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+a {
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.discord {
+  color: #5865f2;
+}
+
+.mail {
+  color: #1da1f2;
+}
+
+.dark .discord {
+  color: #5865f2;
+}
+
+.dark svg #mail {
+  color: #1da1f2;
+}
+
+.moon {
+  font-size: 16px;
+  color: white;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.btn {
+  background-color: white;
+}
+
+a.active button{
+  background-color: #e5e5e5;
+}
+
+.grid1 {
+  background-color: #e1caf4;
+}
+.a1 {
+  background-color: #e1caf4;
+}
